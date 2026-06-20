@@ -1,0 +1,20 @@
+@import url('../../center.sass');
+
+.place {
+  height: 200px;
+}
+
+.main {
+  height: 200px;
+  background-color: rgba(15, 15, 100, 0.87);
+}
+a {
+  text-decoration: none;
+  font-size: 1.5em;
+  color: rgba(255, 255, 255, 0.877);
+}
+
+a:hover {
+  color: rgba(255, 255, 255, 0.664);
+  text-decoration: underline;
+}
