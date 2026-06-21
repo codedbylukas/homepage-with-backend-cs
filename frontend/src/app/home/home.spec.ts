@@ -15,8 +15,13 @@ describe('Home', () => {
     component = fixture.componentInstance;
     await fixture.whenStable();
   });
-
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+  it('should render title', async () => {
+    const fixture = TestBed.createComponent(Home);
+    await fixture.whenStable();
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.querySelector('h1')?.textContent).toContain('Willkommen auf der Hauptseite');
   });
 });

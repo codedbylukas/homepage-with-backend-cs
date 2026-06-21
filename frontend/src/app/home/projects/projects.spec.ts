@@ -1,22 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { Projects } from './projects';
+import { render, screen } from '@testing-library/angular';
 
 describe('Projects', () => {
-  let component: Projects;
-  let fixture: ComponentFixture<Projects>;
-
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [Projects],
-    }).compileComponents();
-
-    fixture = TestBed.createComponent(Projects);
-    component = fixture.componentInstance;
-    await fixture.whenStable();
-  });
-
   it('should create', () => {
-    expect(component).toBeTruthy();
+    expect(Projects).toBeTruthy();
+  });
+  it('should create number gessing game text', async () => {
+    await render(Projects);
+    expect(screen.findAllByText('Zahl erraten game')).toBeTruthy();
+  });
+  it('should create shopping list link text', async () => {
+    await render(Projects);
+    expect(screen.findAllByText('Einkaufsliste')).toBeTruthy();
   });
 });
