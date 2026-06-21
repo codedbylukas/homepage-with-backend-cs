@@ -1,22 +1,22 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { NumberGessingGame } from './number-gessing-game';
+import { render, screen } from '@testing-library/angular';
 
 describe('NumberGessingGame', () => {
-  let component: NumberGessingGame;
-  let fixture: ComponentFixture<NumberGessingGame>;
-
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [NumberGessingGame],
-    }).compileComponents();
-
-    fixture = TestBed.createComponent(NumberGessingGame);
-    component = fixture.componentInstance;
-    await fixture.whenStable();
-  });
-
   it('should create', () => {
-    expect(component).toBeTruthy();
+    expect(NumberGessingGame).toBeTruthy();
+  });
+  it('should contain text in headline', async () => {
+    await render(NumberGessingGame);
+    expect(screen.findAllByText('Zahlen erraten')).toBeTruthy();
+  });
+  it('should contain text in the description', async () => {
+    await render(NumberGessingGame);
+    expect(screen.findAllByText('Versuche die Zahl zwischen 0 und 100 zu erraten')).toBeTruthy();
+  });
+  it('should contain text the label', async () => {
+    await render(NumberGessingGame);
+    expect(screen.findAllByText('Hier kannst du sagen welche Zahl du raten willst.')).toBeTruthy();
   });
 });

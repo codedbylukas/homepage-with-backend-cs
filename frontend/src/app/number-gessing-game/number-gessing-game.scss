@@ -24,8 +24,12 @@ input {
   height: 40px;
   width: 140px;
   font-size: 18px;
+  border-radius: 10%;
 }
 
 ::placeholder {
   font-size: 16px;
+}
+label {
+  font-size: smaller;
 }
