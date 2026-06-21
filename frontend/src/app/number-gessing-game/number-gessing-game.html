@@ -1,19 +1,37 @@
 <div class="all center-text">
   <h1>Zahlen erraten</h1>
   <p>Versuche die Zahl zwischen 0 und 100 zu erraten</p>
+
   <input
-    id="number-to-gess-imput"
     class="form-input"
+    (keydown.enter)="checkGuess()"
     min="0"
     max="100"
     type="number"
+    id="number-to-gess-imput"
     placeholder="Deine Zahl"
+    [(ngModel)]="guess"
   />
-  <button>Guess</button> <br />
+
+  <button (click)="checkGuess()">Guess</button> <br />
   <label for="number-to-gess-imput">Hier kannst du sagen welche Zahl du raten willst.</label>
+
   <div>
     <br />
-    <p>Versuche:</p>
-    <p>Versuchte Zahl:</p>
+    @if (message) {
+      <p
+        [class.correct]="message.includes('Richtig!')"
+        [class.wrong]="message.includes('zu hoch') || message.includes('zu niedrig')"
+      >
+        {{ message }}
+      </p>
+    }
+    @if (attempts > 0) {
+      <p>Anzahl der Versuche: {{ attempts }}</p>
+    }
   </div>
+
+  @if (gameWon) {
+    <button (click)="resetGame()">Neues Spiel</button>
+  }
 </div>

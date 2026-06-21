@@ -1,9 +1,70 @@
-import { Component } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { ApIModule } from '../api-endpints';
 
 @Component({
   selector: 'app-number-gessing-game',
-  imports: [],
+  standalone: true,
+  imports: [FormsModule],
   templateUrl: './number-gessing-game.html',
   styleUrl: './number-gessing-game.scss',
 })
-export class NumberGessingGame {}
+export class NumberGessingGame implements OnInit {
+  guess: number | null = null;
+  message = '';
+  attempts = 0;
+  gameWon = false;
+
+  private http = inject(HttpClient);
+
+  data: any;
+  localRandomNumber: number = 0;
+
+  apiEndpoint: string = ApIModule.getApiEndpointRandom();
+
+  ngOnInit(): void {
+    this.loadNewNumber();
+  }
+
+  loadNewNumber(): void {
+    this.http.get<any>(this.apiEndpoint).subscribe({
+      next: (response) => {
+        this.data = response;
+        if (response && response.randomNumber) {
+          this.localRandomNumber = response.randomNumber;
+        }
+      },
+      error: (err) => {
+        console.error('Fehler beim Laden der API:', err);
+        this.localRandomNumber = Math.floor(Math.random() * 101);
+      },
+    });
+  }
+
+  checkGuess() {
+    if (this.guess === null) {
+      this.message = 'Bitte gib eine Zahl ein.';
+      return;
+    }
+
+    this.attempts++;
+
+    if (this.guess === this.localRandomNumber) {
+      this.message = 'Richtig! Du hast die Zahl erraten.';
+      this.gameWon = true;
+    } else if (this.guess < this.localRandomNumber) {
+      this.message = 'Deine Zahl ist zu niedrig. Versuche es noch einmal.';
+    } else {
+      this.message = 'Deine Zahl ist zu hoch. Versuche es noch einmal.';
+    }
+  }
+
+  resetGame() {
+    this.guess = null;
+    this.message = '';
+    this.attempts = 0;
+    this.gameWon = false;
+    this.loadNewNumber();
+  }
+}

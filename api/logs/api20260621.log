@@ -7,3 +7,431 @@
 2026-06-21 17:05:21.805 +02:00 [INF] Application started. Press Ctrl+C to shut down.
 2026-06-21 17:05:21.806 +02:00 [INF] Hosting environment: Development
 2026-06-21 17:05:21.807 +02:00 [INF] Content root path: C:\Lukas\ProgrammingProjects\Homepage-with-backend-cs\api
+2026-06-21 17:05:58.703 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5202/ - null null
+2026-06-21 17:05:58.752 +02:00 [WRN] Failed to determine the https port for redirect.
+2026-06-21 17:05:58.774 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5202/ - 404 0 null 73.8092ms
+2026-06-21 17:05:58.786 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5202/, Response status code: 404
+2026-06-21 17:06:05.004 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5202/api/random - null null
+2026-06-21 17:06:05.013 +02:00 [INF] Executing endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:06:05.039 +02:00 [INF] Route matched with {action = "GetRandomNumber", controller = "Random"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRandomNumber() on controller api.Controllers.RandomController (api).
+2026-06-21 17:06:05.056 +02:00 [INF] Received request: From ::1, to /api/random, at: 21.06.2026 17:06:05.051, method: GET.
+2026-06-21 17:06:05.073 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-06-21 17:06:05.134 +02:00 [INF] Executed action api.Controllers.RandomController.GetRandomNumber (api) in 89.0057ms
+2026-06-21 17:06:05.137 +02:00 [INF] Executed endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:06:05.139 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5202/api/random - 200 null application/json; charset=utf-8 135.326ms
+2026-06-21 17:06:05.166 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5202/favicon.ico - null null
+2026-06-21 17:06:05.171 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5202/favicon.ico - 404 0 null 4.7329ms
+2026-06-21 17:06:05.175 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5202/favicon.ico, Response status code: 404
+2026-06-21 17:06:08.058 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5202/api/random - null null
+2026-06-21 17:06:08.062 +02:00 [INF] Executing endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:06:08.064 +02:00 [INF] Route matched with {action = "GetRandomNumber", controller = "Random"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRandomNumber() on controller api.Controllers.RandomController (api).
+2026-06-21 17:06:08.066 +02:00 [INF] Received request: From ::1, to /api/random, at: 21.06.2026 17:06:08.066, method: GET.
+2026-06-21 17:06:08.068 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-06-21 17:06:08.070 +02:00 [INF] Executed action api.Controllers.RandomController.GetRandomNumber (api) in 4.4473ms
+2026-06-21 17:06:08.072 +02:00 [INF] Executed endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:06:08.073 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5202/api/random - 200 null application/json; charset=utf-8 14.6654ms
+2026-06-21 17:06:08.508 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5202/api/random - null null
+2026-06-21 17:06:08.512 +02:00 [INF] Executing endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:06:08.514 +02:00 [INF] Route matched with {action = "GetRandomNumber", controller = "Random"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRandomNumber() on controller api.Controllers.RandomController (api).
+2026-06-21 17:06:08.516 +02:00 [INF] Received request: From ::1, to /api/random, at: 21.06.2026 17:06:08.516, method: GET.
+2026-06-21 17:06:08.517 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-06-21 17:06:08.519 +02:00 [INF] Executed action api.Controllers.RandomController.GetRandomNumber (api) in 2.4939ms
+2026-06-21 17:06:08.520 +02:00 [INF] Executed endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:06:08.522 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5202/api/random - 200 null application/json; charset=utf-8 14.0978ms
+2026-06-21 17:06:08.793 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5202/api/random - null null
+2026-06-21 17:06:08.796 +02:00 [INF] Executing endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:06:08.797 +02:00 [INF] Route matched with {action = "GetRandomNumber", controller = "Random"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRandomNumber() on controller api.Controllers.RandomController (api).
+2026-06-21 17:06:08.800 +02:00 [INF] Received request: From ::1, to /api/random, at: 21.06.2026 17:06:08.800, method: GET.
+2026-06-21 17:06:08.801 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-06-21 17:06:08.803 +02:00 [INF] Executed action api.Controllers.RandomController.GetRandomNumber (api) in 2.964ms
+2026-06-21 17:06:08.804 +02:00 [INF] Executed endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:06:08.805 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5202/api/random - 200 null application/json; charset=utf-8 12.2921ms
+2026-06-21 17:06:09.108 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5202/api/random - null null
+2026-06-21 17:06:09.112 +02:00 [INF] Executing endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:06:09.113 +02:00 [INF] Route matched with {action = "GetRandomNumber", controller = "Random"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRandomNumber() on controller api.Controllers.RandomController (api).
+2026-06-21 17:06:09.116 +02:00 [INF] Received request: From ::1, to /api/random, at: 21.06.2026 17:06:09.116, method: GET.
+2026-06-21 17:06:09.117 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-06-21 17:06:09.119 +02:00 [INF] Executed action api.Controllers.RandomController.GetRandomNumber (api) in 3.1279ms
+2026-06-21 17:06:09.121 +02:00 [INF] Executed endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:06:09.123 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5202/api/random - 200 null application/json; charset=utf-8 14.3017ms
+2026-06-21 17:06:09.419 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5202/api/random - null null
+2026-06-21 17:06:09.422 +02:00 [INF] Executing endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:06:09.423 +02:00 [INF] Route matched with {action = "GetRandomNumber", controller = "Random"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRandomNumber() on controller api.Controllers.RandomController (api).
+2026-06-21 17:06:09.425 +02:00 [INF] Received request: From ::1, to /api/random, at: 21.06.2026 17:06:09.425, method: GET.
+2026-06-21 17:06:09.426 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-06-21 17:06:09.427 +02:00 [INF] Executed action api.Controllers.RandomController.GetRandomNumber (api) in 1.9447ms
+2026-06-21 17:06:09.429 +02:00 [INF] Executed endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:06:09.430 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5202/api/random - 200 null application/json; charset=utf-8 11.1493ms
+2026-06-21 17:06:09.665 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5202/api/random - null null
+2026-06-21 17:06:09.668 +02:00 [INF] Executing endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:06:09.670 +02:00 [INF] Route matched with {action = "GetRandomNumber", controller = "Random"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRandomNumber() on controller api.Controllers.RandomController (api).
+2026-06-21 17:06:09.671 +02:00 [INF] Received request: From ::1, to /api/random, at: 21.06.2026 17:06:09.671, method: GET.
+2026-06-21 17:06:09.671 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-06-21 17:06:09.672 +02:00 [INF] Executed action api.Controllers.RandomController.GetRandomNumber (api) in 1.7109ms
+2026-06-21 17:06:09.674 +02:00 [INF] Executed endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:06:09.675 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5202/api/random - 200 null application/json; charset=utf-8 10.2166ms
+2026-06-21 17:06:09.919 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5202/api/random - null null
+2026-06-21 17:06:09.922 +02:00 [INF] Executing endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:06:09.923 +02:00 [INF] Route matched with {action = "GetRandomNumber", controller = "Random"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRandomNumber() on controller api.Controllers.RandomController (api).
+2026-06-21 17:06:09.925 +02:00 [INF] Received request: From ::1, to /api/random, at: 21.06.2026 17:06:09.925, method: GET.
+2026-06-21 17:06:09.926 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-06-21 17:06:09.928 +02:00 [INF] Executed action api.Controllers.RandomController.GetRandomNumber (api) in 2.601ms
+2026-06-21 17:06:09.929 +02:00 [INF] Executed endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:06:09.931 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5202/api/random - 200 null application/json; charset=utf-8 12.1641ms
+2026-06-21 17:06:10.115 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5202/api/random - null null
+2026-06-21 17:06:10.119 +02:00 [INF] Executing endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:06:10.120 +02:00 [INF] Route matched with {action = "GetRandomNumber", controller = "Random"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRandomNumber() on controller api.Controllers.RandomController (api).
+2026-06-21 17:06:10.122 +02:00 [INF] Received request: From ::1, to /api/random, at: 21.06.2026 17:06:10.122, method: GET.
+2026-06-21 17:06:10.123 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-06-21 17:06:10.124 +02:00 [INF] Executed action api.Controllers.RandomController.GetRandomNumber (api) in 1.8068ms
+2026-06-21 17:06:10.125 +02:00 [INF] Executed endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:06:10.127 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5202/api/random - 200 null application/json; charset=utf-8 11.3851ms
+2026-06-21 17:06:10.291 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5202/api/random - null null
+2026-06-21 17:06:10.294 +02:00 [INF] Executing endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:06:10.295 +02:00 [INF] Route matched with {action = "GetRandomNumber", controller = "Random"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRandomNumber() on controller api.Controllers.RandomController (api).
+2026-06-21 17:06:10.297 +02:00 [INF] Received request: From ::1, to /api/random, at: 21.06.2026 17:06:10.297, method: GET.
+2026-06-21 17:06:10.298 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-06-21 17:06:10.300 +02:00 [INF] Executed action api.Controllers.RandomController.GetRandomNumber (api) in 2.7109ms
+2026-06-21 17:06:10.302 +02:00 [INF] Executed endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:06:10.303 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5202/api/random - 200 null application/json; charset=utf-8 12.2611ms
+2026-06-21 17:06:10.504 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5202/api/random - null null
+2026-06-21 17:06:10.507 +02:00 [INF] Executing endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:06:10.508 +02:00 [INF] Route matched with {action = "GetRandomNumber", controller = "Random"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRandomNumber() on controller api.Controllers.RandomController (api).
+2026-06-21 17:06:10.509 +02:00 [INF] Received request: From ::1, to /api/random, at: 21.06.2026 17:06:10.509, method: GET.
+2026-06-21 17:06:10.510 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-06-21 17:06:10.511 +02:00 [INF] Executed action api.Controllers.RandomController.GetRandomNumber (api) in 1.8664ms
+2026-06-21 17:06:10.513 +02:00 [INF] Executed endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:06:10.514 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5202/api/random - 200 null application/json; charset=utf-8 9.8428ms
+2026-06-21 17:06:10.705 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5202/api/random - null null
+2026-06-21 17:06:10.708 +02:00 [INF] Executing endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:06:10.710 +02:00 [INF] Route matched with {action = "GetRandomNumber", controller = "Random"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRandomNumber() on controller api.Controllers.RandomController (api).
+2026-06-21 17:06:10.712 +02:00 [INF] Received request: From ::1, to /api/random, at: 21.06.2026 17:06:10.712, method: GET.
+2026-06-21 17:06:10.713 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-06-21 17:06:10.714 +02:00 [INF] Executed action api.Controllers.RandomController.GetRandomNumber (api) in 2.687ms
+2026-06-21 17:06:10.716 +02:00 [INF] Executed endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:06:10.718 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5202/api/random - 200 null application/json; charset=utf-8 12.6698ms
+2026-06-21 17:06:34.502 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5202/api/random - null null
+2026-06-21 17:06:34.505 +02:00 [INF] Executing endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:06:34.506 +02:00 [INF] Route matched with {action = "GetRandomNumber", controller = "Random"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRandomNumber() on controller api.Controllers.RandomController (api).
+2026-06-21 17:06:34.508 +02:00 [INF] Received request: From ::1, to /api/random, at: 21.06.2026 17:06:34.508, method: GET.
+2026-06-21 17:06:34.509 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-06-21 17:06:34.511 +02:00 [INF] Executed action api.Controllers.RandomController.GetRandomNumber (api) in 2.549ms
+2026-06-21 17:06:34.512 +02:00 [INF] Executed endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:06:34.514 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5202/api/random - 200 null application/json; charset=utf-8 11.8865ms
+2026-06-21 17:16:33.821 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5202/api/random - null null
+2026-06-21 17:16:33.824 +02:00 [INF] Executing endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:16:33.826 +02:00 [INF] Route matched with {action = "GetRandomNumber", controller = "Random"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRandomNumber() on controller api.Controllers.RandomController (api).
+2026-06-21 17:16:33.828 +02:00 [INF] Received request: From ::1, to /api/random, at: 21.06.2026 17:16:33.828, method: GET.
+2026-06-21 17:16:33.829 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-06-21 17:16:33.830 +02:00 [INF] Executed action api.Controllers.RandomController.GetRandomNumber (api) in 2.6125ms
+2026-06-21 17:16:33.832 +02:00 [INF] Executed endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:16:33.834 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5202/api/random - 200 null application/json; charset=utf-8 13.1337ms
+2026-06-21 17:16:34.058 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5202/api/random - null null
+2026-06-21 17:16:34.061 +02:00 [INF] Executing endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:16:34.062 +02:00 [INF] Route matched with {action = "GetRandomNumber", controller = "Random"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRandomNumber() on controller api.Controllers.RandomController (api).
+2026-06-21 17:16:34.064 +02:00 [INF] Received request: From ::1, to /api/random, at: 21.06.2026 17:16:34.064, method: GET.
+2026-06-21 17:16:34.065 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-06-21 17:16:34.067 +02:00 [INF] Executed action api.Controllers.RandomController.GetRandomNumber (api) in 2.7299ms
+2026-06-21 17:16:34.068 +02:00 [INF] Executed endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:16:34.070 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5202/api/random - 200 null application/json; charset=utf-8 12.0533ms
+2026-06-21 17:16:34.298 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5202/api/random - null null
+2026-06-21 17:16:34.301 +02:00 [INF] Executing endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:16:34.302 +02:00 [INF] Route matched with {action = "GetRandomNumber", controller = "Random"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRandomNumber() on controller api.Controllers.RandomController (api).
+2026-06-21 17:16:34.304 +02:00 [INF] Received request: From ::1, to /api/random, at: 21.06.2026 17:16:34.304, method: GET.
+2026-06-21 17:16:34.305 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-06-21 17:16:34.306 +02:00 [INF] Executed action api.Controllers.RandomController.GetRandomNumber (api) in 2.3033ms
+2026-06-21 17:16:34.307 +02:00 [INF] Executed endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:16:34.308 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5202/api/random - 200 null application/json; charset=utf-8 10.5221ms
+2026-06-21 17:16:34.898 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5202/api/random - null null
+2026-06-21 17:16:34.901 +02:00 [INF] Executing endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:16:34.903 +02:00 [INF] Route matched with {action = "GetRandomNumber", controller = "Random"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRandomNumber() on controller api.Controllers.RandomController (api).
+2026-06-21 17:16:34.904 +02:00 [INF] Received request: From ::1, to /api/random, at: 21.06.2026 17:16:34.904, method: GET.
+2026-06-21 17:16:34.905 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-06-21 17:16:34.907 +02:00 [INF] Executed action api.Controllers.RandomController.GetRandomNumber (api) in 2.5704ms
+2026-06-21 17:16:34.908 +02:00 [INF] Executed endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:16:34.909 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5202/api/random - 200 null application/json; charset=utf-8 11.4355ms
+2026-06-21 17:50:57.615 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5202/api/random - null null
+2026-06-21 17:50:57.619 +02:00 [INF] Executing endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:50:57.620 +02:00 [INF] Route matched with {action = "GetRandomNumber", controller = "Random"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRandomNumber() on controller api.Controllers.RandomController (api).
+2026-06-21 17:50:57.622 +02:00 [INF] Received request: From ::1, to /api/random, at: 21.06.2026 17:50:57.622, method: GET.
+2026-06-21 17:50:57.623 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-06-21 17:50:57.635 +02:00 [INF] Executed action api.Controllers.RandomController.GetRandomNumber (api) in 13.0037ms
+2026-06-21 17:50:57.640 +02:00 [INF] Executed endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:50:57.647 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5202/api/random - 200 null application/json; charset=utf-8 31.7715ms
+2026-06-21 17:50:59.385 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5202/api/random - null null
+2026-06-21 17:50:59.387 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5202/api/random - null null
+2026-06-21 17:50:59.388 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5202/api/random - null null
+2026-06-21 17:50:59.389 +02:00 [INF] Executing endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:50:59.394 +02:00 [INF] Executing endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:50:59.397 +02:00 [INF] Executing endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:50:59.398 +02:00 [INF] Route matched with {action = "GetRandomNumber", controller = "Random"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRandomNumber() on controller api.Controllers.RandomController (api).
+2026-06-21 17:50:59.399 +02:00 [INF] Route matched with {action = "GetRandomNumber", controller = "Random"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRandomNumber() on controller api.Controllers.RandomController (api).
+2026-06-21 17:50:59.400 +02:00 [INF] Route matched with {action = "GetRandomNumber", controller = "Random"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRandomNumber() on controller api.Controllers.RandomController (api).
+2026-06-21 17:50:59.402 +02:00 [INF] Received request: From ::1, to /api/random, at: 21.06.2026 17:50:59.402, method: GET.
+2026-06-21 17:50:59.404 +02:00 [INF] Received request: From ::1, to /api/random, at: 21.06.2026 17:50:59.404, method: GET.
+2026-06-21 17:50:59.405 +02:00 [INF] Received request: From ::1, to /api/random, at: 21.06.2026 17:50:59.405, method: GET.
+2026-06-21 17:50:59.406 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-06-21 17:50:59.406 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-06-21 17:50:59.407 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-06-21 17:50:59.415 +02:00 [INF] Executed action api.Controllers.RandomController.GetRandomNumber (api) in 11.6403ms
+2026-06-21 17:50:59.415 +02:00 [INF] Executed action api.Controllers.RandomController.GetRandomNumber (api) in 13.0175ms
+2026-06-21 17:50:59.415 +02:00 [INF] Executed action api.Controllers.RandomController.GetRandomNumber (api) in 10.1941ms
+2026-06-21 17:50:59.416 +02:00 [INF] Executed endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:50:59.417 +02:00 [INF] Executed endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:50:59.418 +02:00 [INF] Executed endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:50:59.418 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5202/api/random - 499 null application/json; charset=utf-8 31.1389ms
+2026-06-21 17:50:59.419 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5202/api/random - 499 null application/json; charset=utf-8 34.2004ms
+2026-06-21 17:50:59.420 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5202/api/random - 499 null application/json; charset=utf-8 32.164ms
+2026-06-21 17:52:31.281 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5202/api/random - null null
+2026-06-21 17:52:31.285 +02:00 [INF] Executing endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:52:31.288 +02:00 [INF] Route matched with {action = "GetRandomNumber", controller = "Random"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRandomNumber() on controller api.Controllers.RandomController (api).
+2026-06-21 17:52:31.291 +02:00 [INF] Received request: From ::1, to /api/random, at: 21.06.2026 17:52:31.291, method: GET.
+2026-06-21 17:52:31.293 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-06-21 17:52:31.295 +02:00 [INF] Executed action api.Controllers.RandomController.GetRandomNumber (api) in 3.8004ms
+2026-06-21 17:52:31.296 +02:00 [INF] Executed endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:52:31.297 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5202/api/random - 200 null application/json; charset=utf-8 16.5212ms
+2026-06-21 17:52:32.692 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5202/api/random - null null
+2026-06-21 17:52:32.693 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5202/api/random - null null
+2026-06-21 17:52:32.694 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5202/api/random - null null
+2026-06-21 17:52:32.696 +02:00 [INF] Executing endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:52:32.698 +02:00 [INF] Executing endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:52:32.700 +02:00 [INF] Executing endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:52:32.701 +02:00 [INF] Route matched with {action = "GetRandomNumber", controller = "Random"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRandomNumber() on controller api.Controllers.RandomController (api).
+2026-06-21 17:52:32.702 +02:00 [INF] Route matched with {action = "GetRandomNumber", controller = "Random"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRandomNumber() on controller api.Controllers.RandomController (api).
+2026-06-21 17:52:32.704 +02:00 [INF] Route matched with {action = "GetRandomNumber", controller = "Random"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRandomNumber() on controller api.Controllers.RandomController (api).
+2026-06-21 17:52:32.705 +02:00 [INF] Received request: From ::1, to /api/random, at: 21.06.2026 17:52:32.705, method: GET.
+2026-06-21 17:52:32.707 +02:00 [INF] Received request: From ::1, to /api/random, at: 21.06.2026 17:52:32.707, method: GET.
+2026-06-21 17:52:32.708 +02:00 [INF] Received request: From ::1, to /api/random, at: 21.06.2026 17:52:32.708, method: GET.
+2026-06-21 17:52:32.709 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-06-21 17:52:32.709 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-06-21 17:52:32.710 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-06-21 17:52:32.711 +02:00 [INF] Executed action api.Controllers.RandomController.GetRandomNumber (api) in 5.8254ms
+2026-06-21 17:52:32.713 +02:00 [INF] Executed action api.Controllers.RandomController.GetRandomNumber (api) in 5.4993ms
+2026-06-21 17:52:32.714 +02:00 [INF] Executed action api.Controllers.RandomController.GetRandomNumber (api) in 5.6253ms
+2026-06-21 17:52:32.715 +02:00 [INF] Executed endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:52:32.716 +02:00 [INF] Executed endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:52:32.716 +02:00 [INF] Executed endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:52:32.717 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5202/api/random - 499 null application/json; charset=utf-8 24.6327ms
+2026-06-21 17:52:32.718 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5202/api/random - 499 null application/json; charset=utf-8 24.5778ms
+2026-06-21 17:52:32.719 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5202/api/random - 499 null application/json; charset=utf-8 24.8488ms
+2026-06-21 17:55:46.606 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5202/api/random - null null
+2026-06-21 17:55:46.613 +02:00 [INF] Executing endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:55:46.615 +02:00 [INF] Route matched with {action = "GetRandomNumber", controller = "Random"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRandomNumber() on controller api.Controllers.RandomController (api).
+2026-06-21 17:55:46.617 +02:00 [INF] Received request: From ::1, to /api/random, at: 21.06.2026 17:55:46.617, method: GET.
+2026-06-21 17:55:46.619 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-06-21 17:55:46.620 +02:00 [INF] Executed action api.Controllers.RandomController.GetRandomNumber (api) in 2.8012ms
+2026-06-21 17:55:46.622 +02:00 [INF] Executed endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:55:46.623 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5202/api/random - 200 null application/json; charset=utf-8 16.8154ms
+2026-06-21 17:55:47.489 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5202/api/random - null null
+2026-06-21 17:55:47.490 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5202/api/random - null null
+2026-06-21 17:55:47.490 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5202/api/random - null null
+2026-06-21 17:55:47.492 +02:00 [INF] Executing endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:55:47.494 +02:00 [INF] Executing endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:55:47.497 +02:00 [INF] Executing endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:55:47.498 +02:00 [INF] Route matched with {action = "GetRandomNumber", controller = "Random"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRandomNumber() on controller api.Controllers.RandomController (api).
+2026-06-21 17:55:47.499 +02:00 [INF] Route matched with {action = "GetRandomNumber", controller = "Random"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRandomNumber() on controller api.Controllers.RandomController (api).
+2026-06-21 17:55:47.500 +02:00 [INF] Route matched with {action = "GetRandomNumber", controller = "Random"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRandomNumber() on controller api.Controllers.RandomController (api).
+2026-06-21 17:55:47.502 +02:00 [INF] Received request: From ::1, to /api/random, at: 21.06.2026 17:55:47.502, method: GET.
+2026-06-21 17:55:47.504 +02:00 [INF] Received request: From ::1, to /api/random, at: 21.06.2026 17:55:47.504, method: GET.
+2026-06-21 17:55:47.505 +02:00 [INF] Received request: From ::1, to /api/random, at: 21.06.2026 17:55:47.505, method: GET.
+2026-06-21 17:55:47.506 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-06-21 17:55:47.507 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-06-21 17:55:47.508 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-06-21 17:55:47.509 +02:00 [INF] Executed action api.Controllers.RandomController.GetRandomNumber (api) in 6.949ms
+2026-06-21 17:55:47.510 +02:00 [INF] Executed action api.Controllers.RandomController.GetRandomNumber (api) in 6.2038ms
+2026-06-21 17:55:47.512 +02:00 [INF] Executed action api.Controllers.RandomController.GetRandomNumber (api) in 6.6345ms
+2026-06-21 17:55:47.513 +02:00 [INF] Executed endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:55:47.514 +02:00 [INF] Executed endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:55:47.517 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5202/api/random - 499 null application/json; charset=utf-8 26.7115ms
+2026-06-21 17:55:47.516 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5202/api/random - 499 null application/json; charset=utf-8 27.6133ms
+2026-06-21 17:55:47.515 +02:00 [INF] Executed endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:55:47.522 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5202/api/random - 499 null application/json; charset=utf-8 31.2519ms
+2026-06-21 17:59:19.826 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5202/api/random - null null
+2026-06-21 17:59:19.828 +02:00 [INF] Executing endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:59:19.830 +02:00 [INF] Route matched with {action = "GetRandomNumber", controller = "Random"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRandomNumber() on controller api.Controllers.RandomController (api).
+2026-06-21 17:59:19.837 +02:00 [INF] Received request: From ::1, to /api/random, at: 21.06.2026 17:59:19.837, method: GET.
+2026-06-21 17:59:19.838 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-06-21 17:59:19.841 +02:00 [INF] Executed action api.Controllers.RandomController.GetRandomNumber (api) in 4.0811ms
+2026-06-21 17:59:19.844 +02:00 [INF] Executed endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:59:19.846 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5202/api/random - 200 null application/json; charset=utf-8 19.6293ms
+2026-06-21 17:59:21.989 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5202/api/random - null null
+2026-06-21 17:59:21.991 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5202/api/random - null null
+2026-06-21 17:59:21.991 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5202/api/random - null null
+2026-06-21 17:59:21.993 +02:00 [INF] Executing endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:59:22.006 +02:00 [INF] Executing endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:59:22.007 +02:00 [INF] Executing endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:59:22.008 +02:00 [INF] Route matched with {action = "GetRandomNumber", controller = "Random"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRandomNumber() on controller api.Controllers.RandomController (api).
+2026-06-21 17:59:22.009 +02:00 [INF] Route matched with {action = "GetRandomNumber", controller = "Random"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRandomNumber() on controller api.Controllers.RandomController (api).
+2026-06-21 17:59:22.010 +02:00 [INF] Route matched with {action = "GetRandomNumber", controller = "Random"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRandomNumber() on controller api.Controllers.RandomController (api).
+2026-06-21 17:59:22.012 +02:00 [INF] Received request: From ::1, to /api/random, at: 21.06.2026 17:59:22.012, method: GET.
+2026-06-21 17:59:22.016 +02:00 [INF] Received request: From ::1, to /api/random, at: 21.06.2026 17:59:22.016, method: GET.
+2026-06-21 17:59:22.019 +02:00 [INF] Received request: From ::1, to /api/random, at: 21.06.2026 17:59:22.019, method: GET.
+2026-06-21 17:59:22.019 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-06-21 17:59:22.020 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-06-21 17:59:22.021 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-06-21 17:59:22.022 +02:00 [INF] Executed action api.Controllers.RandomController.GetRandomNumber (api) in 9.9516ms
+2026-06-21 17:59:22.023 +02:00 [INF] Executed action api.Controllers.RandomController.GetRandomNumber (api) in 7.1758ms
+2026-06-21 17:59:22.025 +02:00 [INF] Executed action api.Controllers.RandomController.GetRandomNumber (api) in 5.9487ms
+2026-06-21 17:59:22.026 +02:00 [INF] Executed endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:59:22.027 +02:00 [INF] Executed endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:59:22.028 +02:00 [INF] Executed endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 17:59:22.031 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5202/api/random - 499 null application/json; charset=utf-8 40.0388ms
+2026-06-21 17:59:22.030 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5202/api/random - 499 null application/json; charset=utf-8 39.3696ms
+2026-06-21 17:59:22.029 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5202/api/random - 499 null application/json; charset=utf-8 40.4547ms
+2026-06-21 18:04:54.646 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5202/api/random - null null
+2026-06-21 18:04:54.651 +02:00 [INF] Executing endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 18:04:54.653 +02:00 [INF] Route matched with {action = "GetRandomNumber", controller = "Random"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRandomNumber() on controller api.Controllers.RandomController (api).
+2026-06-21 18:04:54.655 +02:00 [INF] Received request: From ::1, to /api/random, at: 21.06.2026 18:04:54.655, method: GET.
+2026-06-21 18:04:54.656 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-06-21 18:04:54.658 +02:00 [INF] Executed action api.Controllers.RandomController.GetRandomNumber (api) in 2.9812ms
+2026-06-21 18:04:54.659 +02:00 [INF] Executed endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 18:04:54.660 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5202/api/random - 200 null application/json; charset=utf-8 14.2501ms
+2026-06-21 18:05:18.103 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5202/api/random - null null
+2026-06-21 18:05:18.106 +02:00 [INF] Executing endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 18:05:18.108 +02:00 [INF] Route matched with {action = "GetRandomNumber", controller = "Random"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRandomNumber() on controller api.Controllers.RandomController (api).
+2026-06-21 18:05:18.110 +02:00 [INF] Received request: From ::1, to /api/random, at: 21.06.2026 18:05:18.110, method: GET.
+2026-06-21 18:05:18.111 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-06-21 18:05:18.113 +02:00 [INF] Executed action api.Controllers.RandomController.GetRandomNumber (api) in 2.6525ms
+2026-06-21 18:05:18.115 +02:00 [INF] Executed endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 18:05:18.117 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5202/api/random - 200 null application/json; charset=utf-8 14.0615ms
+2026-06-21 18:05:18.801 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5202/api/random - null null
+2026-06-21 18:05:18.804 +02:00 [INF] Executing endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 18:05:18.806 +02:00 [INF] Route matched with {action = "GetRandomNumber", controller = "Random"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRandomNumber() on controller api.Controllers.RandomController (api).
+2026-06-21 18:05:18.808 +02:00 [INF] Received request: From ::1, to /api/random, at: 21.06.2026 18:05:18.808, method: GET.
+2026-06-21 18:05:18.809 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-06-21 18:05:18.810 +02:00 [INF] Executed action api.Controllers.RandomController.GetRandomNumber (api) in 2.3895ms
+2026-06-21 18:05:18.812 +02:00 [INF] Executed endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 18:05:18.813 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5202/api/random - 200 null application/json; charset=utf-8 11.8403ms
+2026-06-21 18:05:19.306 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5202/api/random - null null
+2026-06-21 18:05:19.311 +02:00 [INF] Executing endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 18:05:19.312 +02:00 [INF] Route matched with {action = "GetRandomNumber", controller = "Random"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRandomNumber() on controller api.Controllers.RandomController (api).
+2026-06-21 18:05:19.314 +02:00 [INF] Received request: From ::1, to /api/random, at: 21.06.2026 18:05:19.314, method: GET.
+2026-06-21 18:05:19.315 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-06-21 18:05:19.317 +02:00 [INF] Executed action api.Controllers.RandomController.GetRandomNumber (api) in 2.3949ms
+2026-06-21 18:05:19.318 +02:00 [INF] Executed endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 18:05:19.319 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5202/api/random - 200 null application/json; charset=utf-8 13.2146ms
+2026-06-21 18:05:57.450 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5202/api/random - null null
+2026-06-21 18:05:57.453 +02:00 [INF] Executing endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 18:05:57.454 +02:00 [INF] Route matched with {action = "GetRandomNumber", controller = "Random"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRandomNumber() on controller api.Controllers.RandomController (api).
+2026-06-21 18:05:57.456 +02:00 [INF] Received request: From ::1, to /api/random, at: 21.06.2026 18:05:57.456, method: GET.
+2026-06-21 18:05:57.457 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-06-21 18:05:57.458 +02:00 [INF] Executed action api.Controllers.RandomController.GetRandomNumber (api) in 2.3141ms
+2026-06-21 18:05:57.460 +02:00 [INF] Executed endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 18:05:57.463 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5202/api/random - 200 null application/json; charset=utf-8 12.7833ms
+2026-06-21 18:05:57.898 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5202/api/random - null null
+2026-06-21 18:05:57.902 +02:00 [INF] Executing endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 18:05:57.903 +02:00 [INF] Route matched with {action = "GetRandomNumber", controller = "Random"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRandomNumber() on controller api.Controllers.RandomController (api).
+2026-06-21 18:05:57.905 +02:00 [INF] Received request: From ::1, to /api/random, at: 21.06.2026 18:05:57.905, method: GET.
+2026-06-21 18:05:57.906 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-06-21 18:05:57.907 +02:00 [INF] Executed action api.Controllers.RandomController.GetRandomNumber (api) in 2.7604ms
+2026-06-21 18:05:57.909 +02:00 [INF] Executed endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 18:05:57.910 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5202/api/random - 200 null application/json; charset=utf-8 11.588ms
+2026-06-21 18:19:05.563 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5202/api/random - null null
+2026-06-21 18:19:05.566 +02:00 [INF] Executing endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 18:19:05.568 +02:00 [INF] Route matched with {action = "GetRandomNumber", controller = "Random"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRandomNumber() on controller api.Controllers.RandomController (api).
+2026-06-21 18:19:05.572 +02:00 [INF] Received request: From ::1, to /api/random, at: 21.06.2026 18:19:05.572, method: GET.
+2026-06-21 18:19:05.573 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-06-21 18:19:05.574 +02:00 [INF] Executed action api.Controllers.RandomController.GetRandomNumber (api) in 2.2665ms
+2026-06-21 18:19:05.576 +02:00 [INF] Executed endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 18:19:05.577 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5202/api/random - 200 null application/json; charset=utf-8 13.6838ms
+2026-06-21 18:19:18.530 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5202/api/random - null null
+2026-06-21 18:19:18.533 +02:00 [INF] Executing endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 18:19:18.535 +02:00 [INF] Route matched with {action = "GetRandomNumber", controller = "Random"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRandomNumber() on controller api.Controllers.RandomController (api).
+2026-06-21 18:19:18.538 +02:00 [INF] Received request: From ::1, to /api/random, at: 21.06.2026 18:19:18.538, method: GET.
+2026-06-21 18:19:18.539 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-06-21 18:19:18.541 +02:00 [INF] Executed action api.Controllers.RandomController.GetRandomNumber (api) in 2.9959ms
+2026-06-21 18:19:18.542 +02:00 [INF] Executed endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 18:19:18.544 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5202/api/random - 200 null application/json; charset=utf-8 14.0358ms
+2026-06-21 18:19:19.966 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5202/api/random - null null
+2026-06-21 18:19:19.971 +02:00 [INF] Executing endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 18:19:19.972 +02:00 [INF] Route matched with {action = "GetRandomNumber", controller = "Random"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRandomNumber() on controller api.Controllers.RandomController (api).
+2026-06-21 18:19:19.974 +02:00 [INF] Received request: From ::1, to /api/random, at: 21.06.2026 18:19:19.974, method: GET.
+2026-06-21 18:19:19.975 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-06-21 18:19:19.977 +02:00 [INF] Executed action api.Controllers.RandomController.GetRandomNumber (api) in 2.8816ms
+2026-06-21 18:19:19.979 +02:00 [INF] Executed endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 18:19:19.980 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5202/api/random - 200 null application/json; charset=utf-8 14.163ms
+2026-06-21 18:19:20.745 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5202/api/random - null null
+2026-06-21 18:19:20.748 +02:00 [INF] Executing endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 18:19:20.749 +02:00 [INF] Route matched with {action = "GetRandomNumber", controller = "Random"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRandomNumber() on controller api.Controllers.RandomController (api).
+2026-06-21 18:19:20.752 +02:00 [INF] Received request: From ::1, to /api/random, at: 21.06.2026 18:19:20.752, method: GET.
+2026-06-21 18:19:20.753 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-06-21 18:19:20.755 +02:00 [INF] Executed action api.Controllers.RandomController.GetRandomNumber (api) in 3.2374ms
+2026-06-21 18:19:20.757 +02:00 [INF] Executed endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 18:19:20.758 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5202/api/random - 200 null application/json; charset=utf-8 13.0778ms
+2026-06-21 18:19:21.265 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5202/api/random - null null
+2026-06-21 18:19:21.270 +02:00 [INF] Executing endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 18:19:21.271 +02:00 [INF] Route matched with {action = "GetRandomNumber", controller = "Random"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRandomNumber() on controller api.Controllers.RandomController (api).
+2026-06-21 18:19:21.274 +02:00 [INF] Received request: From ::1, to /api/random, at: 21.06.2026 18:19:21.273, method: GET.
+2026-06-21 18:19:21.275 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-06-21 18:19:21.276 +02:00 [INF] Executed action api.Controllers.RandomController.GetRandomNumber (api) in 2.6213ms
+2026-06-21 18:19:21.278 +02:00 [INF] Executed endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 18:19:21.279 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5202/api/random - 200 null application/json; charset=utf-8 14.493ms
+2026-06-21 18:19:21.786 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5202/api/random - null null
+2026-06-21 18:19:21.789 +02:00 [INF] Executing endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 18:19:21.791 +02:00 [INF] Route matched with {action = "GetRandomNumber", controller = "Random"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRandomNumber() on controller api.Controllers.RandomController (api).
+2026-06-21 18:19:21.792 +02:00 [INF] Received request: From ::1, to /api/random, at: 21.06.2026 18:19:21.792, method: GET.
+2026-06-21 18:19:21.793 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-06-21 18:19:21.795 +02:00 [INF] Executed action api.Controllers.RandomController.GetRandomNumber (api) in 2.5417ms
+2026-06-21 18:19:21.797 +02:00 [INF] Executed endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 18:19:21.798 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5202/api/random - 200 null application/json; charset=utf-8 11.9138ms
+2026-06-21 18:19:21.986 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5202/api/random - null null
+2026-06-21 18:19:21.989 +02:00 [INF] Executing endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 18:19:21.992 +02:00 [INF] Route matched with {action = "GetRandomNumber", controller = "Random"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRandomNumber() on controller api.Controllers.RandomController (api).
+2026-06-21 18:19:21.994 +02:00 [INF] Received request: From ::1, to /api/random, at: 21.06.2026 18:19:21.994, method: GET.
+2026-06-21 18:19:21.995 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-06-21 18:19:21.997 +02:00 [INF] Executed action api.Controllers.RandomController.GetRandomNumber (api) in 2.8529ms
+2026-06-21 18:19:21.999 +02:00 [INF] Executed endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 18:19:22.000 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5202/api/random - 200 null application/json; charset=utf-8 13.9555ms
+2026-06-21 18:19:22.181 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5202/api/random - null null
+2026-06-21 18:19:22.186 +02:00 [INF] Executing endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 18:19:22.188 +02:00 [INF] Route matched with {action = "GetRandomNumber", controller = "Random"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRandomNumber() on controller api.Controllers.RandomController (api).
+2026-06-21 18:19:22.190 +02:00 [INF] Received request: From ::1, to /api/random, at: 21.06.2026 18:19:22.190, method: GET.
+2026-06-21 18:19:22.191 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-06-21 18:19:22.192 +02:00 [INF] Executed action api.Controllers.RandomController.GetRandomNumber (api) in 2.7274ms
+2026-06-21 18:19:22.194 +02:00 [INF] Executed endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 18:19:22.195 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5202/api/random - 200 null application/json; charset=utf-8 13.6932ms
+2026-06-21 18:19:23.595 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5202/api/random - null null
+2026-06-21 18:19:23.599 +02:00 [INF] Executing endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 18:19:23.600 +02:00 [INF] Route matched with {action = "GetRandomNumber", controller = "Random"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRandomNumber() on controller api.Controllers.RandomController (api).
+2026-06-21 18:19:23.603 +02:00 [INF] Received request: From ::1, to /api/random, at: 21.06.2026 18:19:23.603, method: GET.
+2026-06-21 18:19:23.605 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-06-21 18:19:23.607 +02:00 [INF] Executed action api.Controllers.RandomController.GetRandomNumber (api) in 3.3826ms
+2026-06-21 18:19:23.608 +02:00 [INF] Executed endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 18:19:23.609 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5202/api/random - 200 null application/json; charset=utf-8 14.6116ms
+2026-06-21 18:19:23.751 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5202/api/random - null null
+2026-06-21 18:19:23.756 +02:00 [INF] Executing endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 18:19:23.757 +02:00 [INF] Route matched with {action = "GetRandomNumber", controller = "Random"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRandomNumber() on controller api.Controllers.RandomController (api).
+2026-06-21 18:19:23.759 +02:00 [INF] Received request: From ::1, to /api/random, at: 21.06.2026 18:19:23.759, method: GET.
+2026-06-21 18:19:23.760 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-06-21 18:19:23.761 +02:00 [INF] Executed action api.Controllers.RandomController.GetRandomNumber (api) in 2.2617ms
+2026-06-21 18:19:23.763 +02:00 [INF] Executed endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 18:19:23.764 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5202/api/random - 200 null application/json; charset=utf-8 12.415ms
+2026-06-21 18:20:02.773 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5202/api/random - null null
+2026-06-21 18:20:02.777 +02:00 [INF] Executing endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 18:20:02.778 +02:00 [INF] Route matched with {action = "GetRandomNumber", controller = "Random"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRandomNumber() on controller api.Controllers.RandomController (api).
+2026-06-21 18:20:02.780 +02:00 [INF] Received request: From ::1, to /api/random, at: 21.06.2026 18:20:02.780, method: GET.
+2026-06-21 18:20:02.781 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-06-21 18:20:02.782 +02:00 [INF] Executed action api.Controllers.RandomController.GetRandomNumber (api) in 2.3849ms
+2026-06-21 18:20:02.784 +02:00 [INF] Executed endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 18:20:02.786 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5202/api/random - 200 null application/json; charset=utf-8 13.1133ms
+2026-06-21 18:21:29.153 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5202/api/random - null null
+2026-06-21 18:21:29.160 +02:00 [INF] Executing endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 18:21:29.161 +02:00 [INF] Route matched with {action = "GetRandomNumber", controller = "Random"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRandomNumber() on controller api.Controllers.RandomController (api).
+2026-06-21 18:21:29.168 +02:00 [INF] Received request: From ::1, to /api/random, at: 21.06.2026 18:21:29.168, method: GET.
+2026-06-21 18:21:29.169 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-06-21 18:21:29.170 +02:00 [INF] Executed action api.Controllers.RandomController.GetRandomNumber (api) in 2.8038ms
+2026-06-21 18:21:29.172 +02:00 [INF] Executed endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 18:21:29.174 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5202/api/random - 200 null application/json; charset=utf-8 20.3359ms
+2026-06-21 18:22:21.850 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5202/api/random - null null
+2026-06-21 18:22:21.853 +02:00 [INF] Executing endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 18:22:21.854 +02:00 [INF] Route matched with {action = "GetRandomNumber", controller = "Random"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRandomNumber() on controller api.Controllers.RandomController (api).
+2026-06-21 18:22:21.856 +02:00 [INF] Received request: From ::1, to /api/random, at: 21.06.2026 18:22:21.856, method: GET.
+2026-06-21 18:22:21.857 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-06-21 18:22:21.858 +02:00 [INF] Executed action api.Controllers.RandomController.GetRandomNumber (api) in 2.2616ms
+2026-06-21 18:22:21.861 +02:00 [INF] Executed endpoint 'api.Controllers.RandomController.GetRandomNumber (api)'
+2026-06-21 18:22:21.862 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5202/api/random - 200 null application/json; charset=utf-8 12.4116ms
+2026-06-21 18:22:48.372 +02:00 [INF] Application is shutting down...
+2026-06-21 18:22:57.701 +02:00 [INF] Now listening on: http://localhost:5202
+2026-06-21 18:22:57.736 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-21 18:22:57.739 +02:00 [INF] Hosting environment: Development
+2026-06-21 18:22:57.740 +02:00 [INF] Content root path: C:\Lukas\ProgrammingProjects\Homepage-with-backend-cs\api
