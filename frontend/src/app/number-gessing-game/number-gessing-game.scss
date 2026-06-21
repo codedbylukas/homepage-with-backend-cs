@@ -6,3 +6,26 @@
   margin-bottom: 20px;
   margin-top: 20px;
 }
+h1 {
+  font-size: 2rem;
+}
+
+button {
+  border-radius: 28%;
+  border: none;
+  padding: 2rem;
+  margin-left: 20px;
+  background-color: rgba(172, 255, 47, 0.541);
+  font-size: 1.5rem;
+}
+
+input {
+  border: none;
+  height: 40px;
+  width: 140px;
+  font-size: 18px;
+}
+
+::placeholder {
+  font-size: 16px;
+}
