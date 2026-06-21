@@ -1,0 +1,39 @@
+name: Angular Unit Tests
+
+on: [push, pull_request]
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+
+        node-version: [22, 24, 26]
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      # Der Name zeigt im GitHub-Interface an, welche Version gerade getestet wird
+      - name: Setup Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v6
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+
+
+      - name: going into frontend
+        run: cd frontend
+
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Run Unit Tests
+        run: npm run test -- --watch=false --browsers=ChromeHeadless
