@@ -13,25 +13,23 @@ jobs:
       fail-fast: false
       matrix:
         os: [ubuntu-latest, windows-latest, macos-latest]
-
         node-version: [22, 24, 26]
 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      # Der Name zeigt im GitHub-Interface an, welche Version gerade getestet wird
       - name: Setup Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v4 # v4 ist aktuell die stabile LTS-Version
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: going into frontend
-        run: cd frontend
-
-
       - name: Install Dependencies
-        run: npm ci
-
+        run: |
+          cd frontend
+          npm install
+        
       - name: Run Unit Tests
-        run: npm run test -- --watch=false --browsers=ChromeHeadless
+        run: |
+          cd frontend
+          npm run test -- --watch=false --browsers=ChromeHeadless
