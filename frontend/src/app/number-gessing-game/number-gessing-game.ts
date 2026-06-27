@@ -44,6 +44,10 @@ export class NumberGessingGame implements OnInit {
   }
 
   checkGuess() {
+    if (this.gameWon) {
+      this.message = 'Du hasst schon gewonnen!!!!';
+      return;
+    }
     if (this.guess === null) {
       this.message = 'Bitte gib eine Zahl ein.';
       return;
