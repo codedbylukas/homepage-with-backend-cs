@@ -12,6 +12,7 @@ import { ApIModule } from '../api-endpints';
 })
 export class NumberGessingGame implements OnInit {
   guess: number | null = null;
+  current_gess: number | null = null;
   message = '';
   attempts = 0;
   gameWon = false;
@@ -50,6 +51,7 @@ export class NumberGessingGame implements OnInit {
 
     this.attempts++;
 
+    this.current_gess = this.guess;
     if (this.guess === this.localRandomNumber) {
       this.message = 'Richtig! Du hast die Zahl erraten.';
       this.gameWon = true;
