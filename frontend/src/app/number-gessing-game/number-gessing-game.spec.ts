@@ -12,7 +12,7 @@ describe('NumberGessingGame', () => {
     });
     httpMock = TestBed.inject(HttpTestingController);
     const req = httpMock.expectOne((request) => request.url.includes('/api/random'));
-    req.flush({ randomNumber: 42 }); // Simuliert eine erfolgreiche API-Antwort
+    req.flush({ randomNumber: 42 });
     return result;
   }
   afterEach(() => {
