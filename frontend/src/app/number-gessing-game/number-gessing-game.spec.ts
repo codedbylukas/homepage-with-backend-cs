@@ -22,8 +22,8 @@ describe('NumberGessingGame', () => {
     const component = fixture.componentInstance;
     expect(component.resetGame).toBeDefined();
   });
-  it('should create shopping list link text', async () => {
+  it('should create Zahlen erraten text', async () => {
     await render(NumberGessingGame);
-    expect(screen.findAllByText('Einkaufsliste')).toBeTruthy();
+    expect(screen.findAllByText('Zahlen erraten')).toBeTruthy();
   });
 });
