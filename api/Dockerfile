@@ -15,7 +15,7 @@ FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS final
 WORKDIR /app
 COPY --from=build /app/publish .
 
-EXPOSE 5130
-ENV ASPNETCORE_URLS=http://0.0.0.0:5130
+EXPOSE 5202
+ENV ASPNETCORE_URLS=http://0.0.0.0:5202
 
 ENTRYPOINT [ "dotnet", "api.dll" ]
