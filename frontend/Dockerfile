@@ -1,0 +1,19 @@
+# --- STAGE 1: Build ---
+FROM node:26-alpine AS build
+WORKDIR /src
+
+COPY package.json package-lock.json ./
+RUN npm ci
+
+COPY . .
+RUN npx ng build --configuration production
+
+# --- STAGE 2: Runtime ---
+FROM nginx:alpine AS final
+
+WORKDIR /usr/share/nginx/html
+RUN rm -rf ./*
+COPY --from=build /src/dist/frontend/browser .
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]
