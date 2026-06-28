@@ -26,4 +26,12 @@ describe('NumberGessingGame', () => {
     await render(NumberGessingGame);
     expect(screen.getByText('Zahlen erraten')).toBeTruthy();
   });
+  it('should create gessing text', async () => {
+    await render(NumberGessingGame);
+    expect(screen.getByText('Versuche die Zahl zwischen 0 und 100 zu erraten')).toBeTruthy();
+  });
+  it('should create guess button test', async () => {
+    await render(NumberGessingGame);
+    expect(screen.getByText('Guess')).toBeTruthy();
+  });
 });
