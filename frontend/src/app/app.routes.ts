@@ -7,6 +7,6 @@ import { ShoppingList } from './shopping-list/shopping-list';
 export const routes: Routes = [
   { path: '', component: Home },
   { path: 'license', component: License },
-  { path: 'number-gessing-game', component: NumberGessingGame },
+  { path: 'number-guessing-game', component: NumberGessingGame },
   { path: 'shopping-list', component: ShoppingList },
 ];
