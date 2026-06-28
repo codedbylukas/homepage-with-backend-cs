@@ -9,10 +9,10 @@ describe('Projects', () => {
   });
   it('should create number gessing game text', async () => {
     await render(Projects);
-    expect(screen.findAllByText('Zahl erraten game')).toBeTruthy();
+    expect(screen.getByText('Zahl erraten game')).toBeTruthy();
   });
   it('should create shopping list link text', async () => {
     await render(Projects);
-    expect(screen.findAllByText('Einkaufsliste')).toBeTruthy();
+    expect(screen.getByText('Einkaufsliste')).toBeTruthy();
   });
 });

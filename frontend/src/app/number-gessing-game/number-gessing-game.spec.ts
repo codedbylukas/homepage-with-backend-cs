@@ -24,6 +24,6 @@ describe('NumberGessingGame', () => {
   });
   it('should create Zahlen erraten text', async () => {
     await render(NumberGessingGame);
-    expect(screen.findAllByText('Zahlen erraten')).toBeTruthy();
+    expect(screen.getByText('Zahlen erraten')).toBeTruthy();
   });
 });
