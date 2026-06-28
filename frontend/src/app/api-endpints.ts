@@ -1,6 +1,6 @@
 export class ApIModule {
   static getApiEndpointRandom(): string {
-    let randomNumberApiEndpoint: string = 'http://localhost:5202/api/random';
+    let randomNumberApiEndpoint: string = '/api/random';
     return randomNumberApiEndpoint;
   }
 }
