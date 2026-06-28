@@ -5,6 +5,8 @@
   margin-left: 20px;
   margin-bottom: 20px;
   margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  padding: 80px;
 }
 h1 {
   font-size: 2rem;
@@ -32,4 +34,9 @@ input {
 }
 label {
   font-size: smaller;
+}
+
+.center-eleme {
+  min-height: 100vh;
+  min-width: 100vw;
 }
