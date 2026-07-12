@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { License } from './license';
+import { HomeBtn } from './home-btn';
 import { provideRouter } from '@angular/router';
 
-describe('License', () => {
-  let component: License;
-  let fixture: ComponentFixture<License>;
+describe('HomeBtn', () => {
+  let component: HomeBtn;
+  let fixture: ComponentFixture<HomeBtn>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [License],
+      imports: [HomeBtn],
       providers: [provideRouter([])],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(License);
+    fixture = TestBed.createComponent(HomeBtn);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });

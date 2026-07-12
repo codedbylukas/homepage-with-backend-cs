@@ -2,11 +2,12 @@ import { Component, inject, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ApIModule } from '../api-endpints';
+import { HomeBtn } from './home-btn/home-btn';
 
 @Component({
   selector: 'app-number-gessing-game',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule, HomeBtn],
   templateUrl: './number-gessing-game.html',
   styleUrl: './number-gessing-game.scss',
 })
