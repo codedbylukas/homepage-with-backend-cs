@@ -11,6 +11,8 @@ services:
       - "80:80"
     depends_on:
       - homepage-backend
+    volumes:
+      - ./webserver-logs:/var/log/nginx
   homepage-backend:
     build:
       context: ./api
@@ -18,3 +20,5 @@ services:
       - homepage-network
     ports:
       - "5202:5202"
+    volumes:
+      - ./cs-api-server-logs:/app/logs
