@@ -1,0 +1,22 @@
+version: "3"
+
+networks:
+  homepage-network:
+    driver: bridge
+services:
+  homepage-frontend:
+    build:
+      context: ./frontend
+    networks:
+      - homepage-network
+    ports:
+      - "80:80"
+    depends_on:
+      - homepage-backend
+  homepage-backend:
+    build:
+      context: ./api
+    networks:
+      - homepage-network
+    ports:
+      - "5202:5202"
