@@ -1,3 +1,25 @@
+# --- STAGE 0: Testing ---
+FROM node:26-alpine AS test26
+WORKDIR /app
+COPY package.json package-lock.json ./
+RUN npm ci
+COPY . .
+RUN npm run test -- --watch=false
+
+FROM node:24-alpine AS test24
+WORKDIR /app
+COPY package.json package-lock.json ./
+RUN npm ci
+COPY . .
+RUN npm run test -- --watch=false
+
+FROM node:22-alpine AS test22
+WORKDIR /app
+COPY package.json package-lock.json ./
+RUN npm ci
+COPY . .
+RUN npm run test -- --watch=false
+
 # --- STAGE 1: Build ---
 FROM node:26-alpine AS build
 WORKDIR /src
