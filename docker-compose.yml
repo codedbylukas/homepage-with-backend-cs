@@ -5,6 +5,7 @@ services:
   homepage-frontend:
     build:
       context: ./frontend
+    container_name: my-frontend-homepage
     networks:
       - homepage-network
     ports:
@@ -16,6 +17,7 @@ services:
   homepage-backend:
     build:
       context: ./api
+    container_name: my-api-homepage
     networks:
       - homepage-network
     ports:
