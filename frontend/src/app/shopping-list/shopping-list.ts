@@ -6,4 +6,6 @@ import { Component } from '@angular/core';
   templateUrl: './shopping-list.html',
   styleUrl: './shopping-list.scss',
 })
-export class ShoppingList {}
+export class ShoppingList {
+  second_title: string = 'Füge etwas hinzu in der Einkaufsliste';
+}

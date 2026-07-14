@@ -3,7 +3,7 @@ using Serilog;
 
 namespace api.Controllers
 {
-    public abstract class BaseRandomController : ControllerBase
+    public abstract class BaseApiController : ControllerBase
     {
         protected static readonly Random SharedRandom = new();
         protected void LogRequest(string endpointFromApi)
@@ -18,7 +18,7 @@ namespace api.Controllers
 
     [ApiController]
     [Route("api/random")]
-    public class RandomController : BaseRandomController
+    public class RandomController : BaseApiController
     {
         [HttpGet]
         public IActionResult GetRandomNumber()
