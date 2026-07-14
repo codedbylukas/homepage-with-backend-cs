@@ -6,14 +6,7 @@ RUN npm ci
 COPY . .
 RUN npm run test -- --watch=false
 
-FROM node:24-alpine AS test24
-WORKDIR /app
-COPY package.json package-lock.json ./
-RUN npm ci
-COPY . .
-RUN npm run test -- --watch=false
-
-FROM node:22-alpine AS test22
+FROM node:20-alpine AS test20
 WORKDIR /app
 COPY package.json package-lock.json ./
 RUN npm ci

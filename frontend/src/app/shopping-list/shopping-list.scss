@@ -1,5 +1,15 @@
 @import url('../center.sass');
+@import url('../slide-in.sass');
 
 .all {
   margin: 18px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+.item {
+  font-size: 30px;
+  margin-bottom: 8px;
 }

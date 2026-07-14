@@ -1,4 +1,9 @@
-<div class="all center-text">
+<div class="all slide-in center-text">
   <h1>Willkommen auf deiner Einkaufsliste</h1>
   <p>{{ second_title }}</p>
+  <div class="items">
+    @for (item of data; track item.id) {
+      <div class="item">{{ item.name }}, {{ item.id }}</div>
+    }
+  </div>
 </div>

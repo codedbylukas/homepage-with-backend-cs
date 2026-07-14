@@ -1,3 +1,11 @@
+#--- STAGE 0: Test ---
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS test
+WORKDIR /src
+COPY *.csproj ./
+RUN dotnet restore
+COPY . .
+RUN dotnet build
+
 # --- STAGE 1: Build & Publish ---
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
