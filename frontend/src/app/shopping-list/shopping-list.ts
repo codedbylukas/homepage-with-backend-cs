@@ -19,10 +19,10 @@ export class ShoppingList implements OnInit {
   apiEndpoint: string = ApIModule.getApiEndpointShoppingListGet();
 
   ngOnInit(): void {
-    this.loadNewNumber();
+    this.loadNewItems();
   }
 
-  loadNewNumber(): void {
+  loadNewItems(): void {
     this.http.get<any[]>(this.apiEndpoint).subscribe({
       next: (response) => {
         this.items = response; // <-- Hier "items" befüllen
@@ -37,14 +37,25 @@ export class ShoppingList implements OnInit {
       },
     });
   }
-  addItem() {
+  addItem(): void {
     this.http.post(`${this.apiEndpoint}?name=Neues Item`, {}).subscribe({
       next: (response) => {
-        console.log('Item erfolgreich hinzugefügt:', response);
-        this.loadNewNumber(); // Aktualisiere die Liste nach dem Hinzufügen
+        console.log('Item erfolgreich hinzugefügt: ', response);
+        this.loadNewItems(); // Aktualisiere die Liste nach dem Hinzufügen
       },
       error: (err) => {
         console.error('Fehler beim Hinzufügen des Items:', err);
+      },
+    });
+  }
+  deleteItem(itemId: number): void {
+    this.http.delete(`${this.apiEndpoint}/${itemId}`, {}).subscribe({
+      next: (response) => {
+        console.log('Item erfolgreich gelöscht: ', itemId);
+        this.loadNewItems();
+      },
+      error: (err) => {
+        console.error('Fehler beim löschen des objektes', err);
       },
     });
   }
