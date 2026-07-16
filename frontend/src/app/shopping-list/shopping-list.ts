@@ -37,4 +37,15 @@ export class ShoppingList implements OnInit {
       },
     });
   }
+  addItem() {
+    this.http.post(`${this.apiEndpoint}?name=Neues Item`, {}).subscribe({
+      next: (response) => {
+        console.log('Item erfolgreich hinzugefügt:', response);
+        this.loadNewNumber(); // Aktualisiere die Liste nach dem Hinzufügen
+      },
+      error: (err) => {
+        console.error('Fehler beim Hinzufügen des Items:', err);
+      },
+    });
+  }
 }
