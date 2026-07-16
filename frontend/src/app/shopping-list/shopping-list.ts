@@ -5,17 +5,17 @@ import { ApIModule } from '../api-endpints';
 
 @Component({
   selector: 'app-shopping-list',
-  imports: [CommonModule], // <-- Hinzugefügt
+  imports: [CommonModule],
   templateUrl: './shopping-list.html',
   styleUrl: './shopping-list.scss',
 })
 export class ShoppingList implements OnInit {
   second_title: string = 'Füge etwas hinzu in der Einkaufsliste';
-
+  itemName: string | null = '';
   private http = inject(HttpClient);
   private cdr = inject(ChangeDetectorRef);
 
-  items: any[] = []; // <-- Von "data" zu "items" geändert
+  items: any[] = [];
   apiEndpoint: string = ApIModule.getApiEndpointShoppingListGet();
 
   ngOnInit(): void {
@@ -25,7 +25,7 @@ export class ShoppingList implements OnInit {
   loadNewItems(): void {
     this.http.get<any[]>(this.apiEndpoint).subscribe({
       next: (response) => {
-        this.items = response; // <-- Hier "items" befüllen
+        this.items = response;
         console.log('API-Daten erfolgreich geladen:', this.items);
         this.cdr.detectChanges();
       },
@@ -38,10 +38,14 @@ export class ShoppingList implements OnInit {
     });
   }
   addItem(): void {
-    this.http.post(`${this.apiEndpoint}?name=Neues Item`, {}).subscribe({
+    this.itemName = prompt('Welches Item möchtest du hinzufügen? (Name einfügen): ');
+    if ((this.itemName = null)) {
+      return;
+    }
+    this.http.post(`${this.apiEndpoint}?name=${this.itemName}`, {}).subscribe({
       next: (response) => {
         console.log('Item erfolgreich hinzugefügt: ', response);
-        this.loadNewItems(); // Aktualisiere die Liste nach dem Hinzufügen
+        this.loadNewItems();
       },
       error: (err) => {
         console.error('Fehler beim Hinzufügen des Items:', err);
