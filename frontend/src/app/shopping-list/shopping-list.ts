@@ -10,7 +10,6 @@ import { ApIModule } from '../api-endpints';
   styleUrl: './shopping-list.scss',
 })
 export class ShoppingList implements OnInit {
-  second_title: string = 'Füge etwas hinzu in der Einkaufsliste';
   itemName: string | null = '';
   private http = inject(HttpClient);
   private cdr = inject(ChangeDetectorRef);
@@ -39,7 +38,7 @@ export class ShoppingList implements OnInit {
   }
   addItem(): void {
     this.itemName = prompt('Welches Item möchtest du hinzufügen? (Name einfügen): ');
-    if ((this.itemName = null)) {
+    if (this.itemName === null) {
       return;
     }
     this.http.post(`${this.apiEndpoint}?name=${this.itemName}`, {}).subscribe({
