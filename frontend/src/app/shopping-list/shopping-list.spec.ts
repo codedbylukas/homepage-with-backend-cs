@@ -1,9 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ShoppingList } from './shopping-list';
-import { provideRouter } from '@angular/router';
-import { provideHttpClient } from '@angular/common/http';
-import { HttpTestingController, provideHttpClientTesting } from '@angular/common/http/testing';
 
 describe('ShoppingList', () => {
   let component: ShoppingList;
@@ -12,18 +9,10 @@ describe('ShoppingList', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [ShoppingList],
-      providers: [provideRouter([]), provideHttpClient(), provideHttpClientTesting()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(ShoppingList);
     component = fixture.componentInstance;
-
-    // Für Http-mocking
-    fixture.detectChanges();
-    const httpMock = TestBed.inject(HttpTestingController);
-    httpMock.expectOne(() => true).flush([]);
-    // bis hier für http-mocking
-
     await fixture.whenStable();
   });
 
