@@ -2,10 +2,11 @@ import { HttpClient } from '@angular/common/http';
 import { ChangeDetectorRef, Component, inject, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ApIModule } from '../api-endpints';
+import { HomeBtn } from './home-btn/home-btn';
 
 @Component({
   selector: 'app-shopping-list',
-  imports: [CommonModule],
+  imports: [CommonModule, HomeBtn],
   templateUrl: './shopping-list.html',
   styleUrl: './shopping-list.scss',
 })
