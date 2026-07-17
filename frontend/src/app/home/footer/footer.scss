@@ -1,4 +1,4 @@
-@import url('../../center.sass');
+@use '../../center.sass';
 
 .place {
   height: 200px;
@@ -10,7 +10,7 @@
 }
 a {
   text-decoration: none;
-  font-size: 1.5em;
+  font-size: 2em;
   color: rgba(255, 255, 255, 0.877);
 }
 

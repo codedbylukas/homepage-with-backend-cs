@@ -3,3 +3,4 @@
 /bin/
 *.tar
 /logs/
+app_data.db

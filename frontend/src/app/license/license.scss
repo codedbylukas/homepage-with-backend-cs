@@ -1,5 +1,5 @@
-@import url('../center.sass');
-@import url('../slide-in.sass');
+@use '../center.sass';
+@use '../slide-in.sass';
 
 h1 {
   font-size: 2.5em;
