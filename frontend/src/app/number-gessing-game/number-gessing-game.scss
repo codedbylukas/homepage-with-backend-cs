@@ -1,5 +1,5 @@
-@use '../slide-in';
-@use '../center';
+@import url('../slide-in.sass');
+@import url('../center.sass');
 
 .all {
   margin-right: 20px;
