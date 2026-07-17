@@ -14,6 +14,18 @@ h1 {
   margin-bottom: 8px;
 }
 
+button {
+  border: none;
+  padding: 20px;
+  border-radius: 20%;
+}
+
+.delete {
+  background-color: rgba(31, 40, 163, 0.705);
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.685);
+}
+
 .add {
   margin-top: 20px;
   border: none;
