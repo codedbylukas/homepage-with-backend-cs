@@ -33,6 +33,13 @@ button {
   margin-left: 28px;
 }
 
+.center-custom {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
 .add {
   margin-top: 20px;
   background-color: rgba(11, 71, 48, 0.87);
