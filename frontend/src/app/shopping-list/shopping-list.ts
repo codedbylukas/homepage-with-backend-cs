@@ -31,9 +31,6 @@ export class ShoppingList implements OnInit {
       },
       error: (err) => {
         console.error('Fehler beim Laden der API:', err);
-        setTimeout(() => {
-          window.location.reload();
-        }, 500);
       },
     });
   }
