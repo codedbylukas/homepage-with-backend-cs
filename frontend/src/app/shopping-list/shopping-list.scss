@@ -1,8 +1,13 @@
-@import url('../center.sass');
-@import url('../slide-in.sass');
+@use '../center';
+@use '../slide-in.sass';
 
+@mixin make-box-shaddow() {
+  padding: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
 .all {
   margin: 18px;
+  @include make-box-shaddow();
 }
 
 h1 {
@@ -19,14 +24,18 @@ button {
   padding: 20px;
   border-radius: 20%;
   color: rgba(255, 255, 255, 0.685);
+  font-size: 20px;
 }
 
 .delete {
+  font-weight: bold;
   background-color: rgba(31, 40, 163, 0.705);
-  font-size: 18px;
+  margin-left: 28px;
 }
 
 .add {
   margin-top: 20px;
   background-color: rgba(11, 71, 48, 0.87);
+  font-size: 40px;
+  font-weight: bolder;
 }

@@ -3,7 +3,7 @@
   <div class="items">
     @for (item of items; track item.id) {
       <div class="item">
-        {{ item.name }}, <button class="delete" (click)="deleteItem(item.id)">X</button>
+        {{ item.name }} <button class="delete" (click)="deleteItem(item.id)">X</button>
       </div>
     } @empty {
       <p>Deine Einkaufsliste ist leer.</p>
