@@ -8,6 +8,6 @@ describe('Footer', () => {
   });
   it('should show the licence link', async () => {
     await render(Footer);
-    expect(screen.getByText('License')).toBeTruthy();
+    expect(screen.getByText('Licenses used')).toBeTruthy();
   });
 });
