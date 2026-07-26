@@ -2,4 +2,4 @@
 #include <iostream>
 #include "crow.h"
 
-void setup_route_index(crow::SimpleApp& app);
+void setup_route_basesv(crow::SimpleApp& app);
