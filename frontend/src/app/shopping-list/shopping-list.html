@@ -7,7 +7,7 @@
           {{ item.name }} <button class="delete" (click)="deleteItem(item.id)">X</button>
         </div>
       } @empty {
-        <p>Deine Einkaufsliste ist leer.</p>
+        <p class="emty">Deine Einkaufsliste ist leer.</p>
       }
       <button class="add" (click)="addItem()">+</button>
     </div>
