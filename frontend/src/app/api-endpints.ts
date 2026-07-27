@@ -1,4 +1,4 @@
-let useDebugUrl: boolean = false;
+let useDebugUrl: boolean = true;
 
 export class ApIModule {
   static getApiEndpointRandom(): string {
