@@ -2,3 +2,4 @@
 
 /webserver-logs/*
 /cs-api-server-logs/*
+/cpp-api-server-logs/*

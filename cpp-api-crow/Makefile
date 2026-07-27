@@ -3,9 +3,8 @@
 # ==========================================
 
 CXX      := g++
-CXXFLAGS := -std=c++17 -Wall -Wextra -O2
-LDFLAGS  := -pthread
-
+CXXFLAGS := -std=c++17 -O3 -march=native -mtune=native -flto=auto -ffast-math -funroll-loops -fomit-frame-pointer -DNDEBUG -Wall -Wextra
+LDFLAGS  := -flto=auto -pthread -s
 SRC_DIR   := src
 INC_DIR   := include
 BUILD_DIR := build
@@ -22,14 +21,14 @@ DEPS := $(OBJS:.o=.d)
 
 IFLAGS := -I$(INC_DIR) -I.
 
-.PHONY: all clean run
+.PHONY: all clean run pgo
 
 all: $(TARGET)
 
 $(TARGET): $(OBJS)
-	@echo "==> Linking $(TARGET)..."
+	@echo "==> Linking $(TARGET) with LTO (Max Performance)..."
 	@$(CXX) $(OBJS) -o $@ $(LDFLAGS)
-	@echo "==> Build successful!"
+	@echo "==> Maximum Performance Build Successful!"
 
 $(BUILD_DIR)/main.o: main.cpp
 	@mkdir -p $(BUILD_DIR)
@@ -43,9 +42,20 @@ $(BUILD_DIR)/src/%.o: $(SRC_DIR)/%.cpp
 
 -include $(DEPS)
 
+pgo:
+	@echo "==> [PGO Step 1/3] Building instrumented binary..."
+	@$(MAKE) clean
+	@$(MAKE) CXXFLAGS="$(CXXFLAGS) -fprofile-generate" LDFLAGS="$(LDFLAGS) -fprofile-generate" all
+	@echo "==> [PGO Step 2/3] Running program to collect execution profile..."
+	@./$(TARGET) || true
+	@echo "==> [PGO Step 3/3] Rebuilding with execution profile data..."
+	@$(MAKE) clean
+	@$(MAKE) CXXFLAGS="$(CXXFLAGS) -fprofile-use -fprofile-correction" LDFLAGS="$(LDFLAGS) -fprofile-use" all
+	@echo "==> [PGO Complete] Absolute maximum performance binary created!"
+
 run: all
 	@./$(TARGET)
 
 clean:
 	@echo "==> Cleaning up..."
-	@rm -rf $(BUILD_DIR) $(TARGET)
+	@rm -rf $(BUILD_DIR) $(TARGET) *.gcda *.gcno

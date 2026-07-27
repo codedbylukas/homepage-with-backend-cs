@@ -1,6 +1,7 @@
 networks:
   homepage-network:
     driver: bridge
+
 services:
   homepage-frontend:
     build:
@@ -11,16 +12,29 @@ services:
     ports:
       - "80:80"
     depends_on:
-      - homepage-backend
+      - homepage-backend-cs
+      - homepage-backend-cpp
     volumes:
       - ./webserver-logs:/var/log/nginx
-  homepage-backend:
+
+  homepage-backend-cs:
     build:
-      context: ./api
-    container_name: my-api-homepage
+      context: ./api-cs
+    container_name: my-api-cs-homepage
     networks:
       - homepage-network
     ports:
       - "5202:5202"
     volumes:
       - ./cs-api-server-logs:/app/logs
+
+  homepage-backend-cpp:
+    build:
+      context: ./cpp-api-crow
+    container_name: my-api-cpp-homepage
+    networks:
+      - homepage-network
+    ports:
+      - "10000:10000"
+    volumes:
+      - ./cpp-api-server-logs:/app/logs
