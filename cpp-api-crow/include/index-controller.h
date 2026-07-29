@@ -2,4 +2,5 @@
 #include <iostream>
 #include "crow.h"
 
-void setup_route_index(crow::SimpleApp& app);
+template<typename App>
+void setup_route_index(App& app);
