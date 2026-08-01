@@ -20,10 +20,11 @@ export class Encoding {
     const text = document.getElementById('encode-text') as HTMLInputElement;
     const encryptionApiString: string = ApIModule.getApiEncode();
 
-    this.http.get<any>(`${encryptionApiString}/${mode.value}-${e.value}/${text.value}`).subscribe({
+    this.http.get<any>(`${encryptionApiString}/${mode.value}-${e.value}/${encodeURIComponent(text.value)}`).subscribe({
       next: (response) => {
-        this.result = response;
+        this.result = { conveted: response.converted || response.conveted };
         this.cdr.detectChanges();
+        console.log('Api geladen hier sind die Daten.: ' + this.result.conveted);
       },
       error: (err) => {
         console.error('Fehler beim Laden der API:', err);

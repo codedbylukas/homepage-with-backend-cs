@@ -13,12 +13,18 @@
     <option value="base64">base64</option>
   </select>
   <select name="encode-mode" id="encode-mode">
+    <option value="from">from</option>
     <option value="to">to</option>
   </select>
   <br />
   <label for="encode-text">Bitte gib mir den Text an, den ich convertieren soll.: </label>
   <br />
-  <input type="text" (keydown.enter)="loadEncoding()" placeholder="Hallo" id="encode-text" />
+  <input
+    type="text"
+    (keydown.enter)="loadEncoding()"
+    placeholder="Text eingeben..."
+    id="encode-text"
+  />
   <br />
   <button (click)="loadEncoding()">Convertieren</button>
   <p>{{ this.result.conveted }}</p>

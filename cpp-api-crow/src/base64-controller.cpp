@@ -25,12 +25,38 @@ string base64_encode(const string& in) {
     return out;
 }
 
+string base64_decode(const string& in) {
+    string out;
+    vector<int> T(256, -1);
+    for (int i = 0; i < 64; i++) T[B64_CHARS[i]] = i;
+
+    int val = 0, valb = -8;
+    for (unsigned char c : in) {
+        if (T[c] == -1) break;
+        val = (val << 6) + T[c];
+        valb += 6;
+        if (valb >= 0) {
+            out.push_back(char((val >> valb) & 0xFF));
+            valb -= 8;
+        }
+    }
+    return out;
+}
+
 void setup_route_basesv(crow::SimpleApp& app) {
     CROW_ROUTE(app, "/api/cpp/encode/to-base64/<string>")
     ([](string plainText){
         crow::json::wvalue response;
         string base64_text = base64_encode(plainText);
         response["conveted"] = base64_text;
+        return crow::response(200, response);
+    });
+
+    CROW_ROUTE(app, "/api/cpp/encode/from-base64/<string>")
+    ([](string base64Text){
+        crow::json::wvalue response;
+        string plain_text = base64_decode(base64Text);
+        response["converted"] = plain_text;
         return crow::response(200, response);
     });
 }
