@@ -1,0 +1,12 @@
+{
+  "/api/cpp": {
+    "target": "http://localhost:10000",
+    "secure": false,
+    "changeOrigin": true
+  },
+  "/api/cs": {
+    "target": "http://localhost:5202",
+    "secure": false,
+    "changeOrigin": true
+  }
+}

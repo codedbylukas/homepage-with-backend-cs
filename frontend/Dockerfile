@@ -6,13 +6,6 @@ RUN npm ci
 COPY . .
 RUN npm run test -- --watch=false
 
-FROM node:20-alpine AS test20
-WORKDIR /app
-COPY package.json package-lock.json ./
-RUN npm ci
-COPY . .
-RUN npm run test -- --watch=false
-
 # --- STAGE 1: Build ---
 FROM node:26-alpine AS build
 WORKDIR /src

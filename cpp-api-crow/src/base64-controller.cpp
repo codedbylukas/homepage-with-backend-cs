@@ -26,13 +26,11 @@ string base64_encode(const string& in) {
 }
 
 void setup_route_basesv(crow::SimpleApp& app) {
-
-
-    CROW_ROUTE(app, "/api/cpp/to-base64/<string>")
+    CROW_ROUTE(app, "/api/cpp/encode/to-base64/<string>")
     ([](string plainText){
         crow::json::wvalue response;
         string base64_text = base64_encode(plainText);
-        response["conveted-text"] = base64_text;
+        response["conveted"] = base64_text;
         return crow::response(200, response);
     });
 }

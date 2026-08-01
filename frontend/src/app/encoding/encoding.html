@@ -4,4 +4,22 @@
     Willkommen in dem encoding teil der Webseite. Das ist dazu da, um encoding zu machen. Siehe was
     bis jetzt alles schon sehen kannst und welche encoding Algorythmen funktionieren.
   </p>
+  <label for="encode-algo">Das erste ist der Encoding algorythus. <br /></label>
+  <label for="encode-mode"
+    >Das zweite ist die Auswahl ob from oder to also, von oder zu der Encoding Methode. <br />
+  </label>
+  <br />
+  <select name="encode-algo" id="encode-algo">
+    <option value="base64">base64</option>
+  </select>
+  <select name="encode-mode" id="encode-mode">
+    <option value="to">to</option>
+  </select>
+  <br />
+  <label for="encode-text">Bitte gib mir den Text an, den ich convertieren soll.: </label>
+  <br />
+  <input type="text" (keydown.enter)="loadEncoding()" placeholder="Hallo" id="encode-text" />
+  <br />
+  <button (click)="loadEncoding()">Convertieren</button>
+  <p>{{ this.result.conveted }}</p>
 </div>

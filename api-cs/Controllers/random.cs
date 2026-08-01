@@ -17,20 +17,20 @@ namespace api.Controllers
     }
 
     [ApiController]
-    [Route("api/random")]
+    [Route("api/cs/random")]
     public class RandomController : BaseApiController
     {
         [HttpGet]
         public IActionResult GetRandomNumber()
         {
-            LogRequest("/api/random");
+            LogRequest("/api/cs/random");
             return Ok(new { randomNumber = SharedRandom.Next(1, 101) });
         }
 
         [HttpPost]
         public IActionResult PostRandomNumber()
         {
-            LogRequest("/api/random (POST)");
+            LogRequest("/api/cs/random (POST)");
             return Ok(new { randomNumber = SharedRandom.Next(1, 101) });
         }
     }
