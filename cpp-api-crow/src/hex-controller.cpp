@@ -6,6 +6,7 @@
 #include <cstdint>
 #include <cstring>
 #include "crow.h"
+#include "hex-controller.h"
 
 using namespace std;
 

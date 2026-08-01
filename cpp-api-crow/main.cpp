@@ -6,6 +6,7 @@
 #include "include/index-controller.h"
 #include "include/base64-controller.h"
 #include "include/hex-controller.h"
+#include "include/rot13-controller.h"
 
 using namespace std;
 
@@ -55,6 +56,8 @@ int main() {
     setup_route_index(app);
     setup_route_basesv(app);
     setup_route_hex(app);
+    setup_route_rot13(app);
+    
     cout << "Server started on port " << port << endl;
     app.port(port).multithreaded().run();
 
