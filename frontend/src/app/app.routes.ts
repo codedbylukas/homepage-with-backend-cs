@@ -3,10 +3,12 @@ import { Home } from './home/home';
 import { License } from './license/license';
 import { NumberGessingGame } from './number-gessing-game/number-gessing-game';
 import { ShoppingList } from './shopping-list/shopping-list';
+import { Encoding } from './encoding/encoding';
 
 export const routes: Routes = [
   { path: '', component: Home },
   { path: 'license', component: License },
   { path: 'number-guessing-game', component: NumberGessingGame },
   { path: 'shopping-list', component: ShoppingList },
+  { path: 'encoding', component: Encoding },
 ];

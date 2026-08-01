@@ -6,7 +6,7 @@ using api.Models;
 namespace api.Controllers
 {
     [ApiController]
-    [Route("api/shoppinglist")]
+    [Route("api/cs/shoppinglist")]
     public class ShoppingListController : BaseApiController
     {
         private const string DbPath = "app_data.db";

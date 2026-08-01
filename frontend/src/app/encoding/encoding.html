@@ -1,0 +1,37 @@
+<div class="center-text slide-in main">
+  <h1>Encoding</h1>
+  <p>
+    Willkommen in dem encoding teil der Webseite. Das ist dazu da, um encoding zu machen. Siehe was
+    bis jetzt alles schon sehen kannst und welche encoding Algorythmen funktionieren.
+  </p>
+  <label for="encode-algo">Das erste ist der Encoding algorythus. <br /></label>
+  <label for="encode-mode"
+    >Das zweite ist die Auswahl ob from oder to also, von oder zu der Encoding Methode. <br />
+  </label>
+  <br />
+  <select name="encode-algo" id="encode-algo">
+    <option value="base64">base64</option>
+    <option value="hex">hex</option>
+    <option value="rot13">rot13</option>
+    <option value="base32">base32</option>
+    <option value="base85">base85</option>
+  </select>
+  <select name="encode-mode" id="encode-mode">
+    <option value="from">from</option>
+    <option value="to">to</option>
+  </select>
+  <br />
+  <label for="encode-text">Bitte gib mir den Text an, den ich convertieren soll.: </label>
+  <br />
+  <input
+    type="text"
+    (keydown.enter)="loadEncoding()"
+    placeholder="Text eingeben..."
+    id="encode-text"
+  />
+  <br />
+  <button (click)="loadEncoding()">Convertieren</button>
+  <p>{{ this.result.conveted }}</p>
+
+  <app-home-btn></app-home-btn>
+</div>

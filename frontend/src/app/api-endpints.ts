@@ -2,17 +2,24 @@ let useDebugUrl: boolean = false;
 
 export class ApIModule {
   static getApiEndpointRandom(): string {
-    let randomNumberApiEndpoint: string = '/api/random';
+    let randomNumberApiEndpoint: string = '/api/cs/random';
     if (useDebugUrl) {
-      randomNumberApiEndpoint = 'http://localhost:5202/api/random';
+      randomNumberApiEndpoint = 'http://localhost:5202/api/cs/random';
     }
     return randomNumberApiEndpoint;
   }
   static getApiEndpointShoppingListGet(): string {
-    let shoppingListGetApiEndpoint: string = '/api/shoppinglist';
+    let shoppingListGetApiEndpoint: string = '/api/cs/shoppinglist';
     if (useDebugUrl) {
-      shoppingListGetApiEndpoint = 'http://localhost:5202/api/shoppinglist';
+      shoppingListGetApiEndpoint = 'http://localhost:5202/api/cs/shoppinglist';
     }
     return shoppingListGetApiEndpoint;
+  }
+  static getApiEncode(): string {
+    let encodeApiEndpoint: string = '/api/cpp/encode';
+    if (useDebugUrl) {
+      encodeApiEndpoint = 'http://localhost:10000/api/cpp/encode';
+    }
+    return encodeApiEndpoint;
   }
 }
