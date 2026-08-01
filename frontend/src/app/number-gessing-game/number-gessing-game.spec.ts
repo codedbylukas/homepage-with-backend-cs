@@ -2,16 +2,17 @@ import { render, screen } from '@testing-library/angular';
 import { TestBed } from '@angular/core/testing';
 import { provideHttpClient } from '@angular/common/http';
 import { provideHttpClientTesting, HttpTestingController } from '@angular/common/http/testing';
+import { provideRouter } from '@angular/router';
 import { NumberGessingGame } from './number-gessing-game';
 
 describe('NumberGessingGame', () => {
   let httpMock: HttpTestingController;
   async function setupComponent() {
     const result = await render(NumberGessingGame, {
-      providers: [provideHttpClient(), provideHttpClientTesting()],
+      providers: [provideHttpClient(), provideHttpClientTesting(), provideRouter([])],
     });
     httpMock = TestBed.inject(HttpTestingController);
-    const req = httpMock.expectOne((request) => request.url.includes('/api/random'));
+    const req = httpMock.expectOne((request) => request.url.includes('/api/cs/random'));
     req.flush({ randomNumber: 42 });
     return result;
   }

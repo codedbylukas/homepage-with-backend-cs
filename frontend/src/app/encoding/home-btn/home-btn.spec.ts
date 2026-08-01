@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Encoding } from './encoding';
+import { HomeBtn } from './home-btn';
 import { provideRouter } from '@angular/router';
 
-describe('Encoding', () => {
-  let component: Encoding;
-  let fixture: ComponentFixture<Encoding>;
+describe('HomeBtn', () => {
+  let component: HomeBtn;
+  let fixture: ComponentFixture<HomeBtn>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Encoding],
+      imports: [HomeBtn],
       providers: [provideRouter([])],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(Encoding);
+    fixture = TestBed.createComponent(HomeBtn);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });

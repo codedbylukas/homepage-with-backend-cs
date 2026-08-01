@@ -1,10 +1,11 @@
 import { HttpClient } from '@angular/common/http';
 import { ChangeDetectorRef, Component, inject } from '@angular/core';
 import { ApIModule } from '../api-endpints';
+import { HomeBtn } from './home-btn/home-btn';
 
 @Component({
   selector: 'app-encoding',
-  imports: [],
+  imports: [HomeBtn],
   templateUrl: './encoding.html',
   styleUrl: './encoding.scss',
 })
