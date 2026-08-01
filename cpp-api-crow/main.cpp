@@ -8,6 +8,7 @@
 #include "include/hex-controller.h"
 #include "include/rot13-controller.h"
 #include "include/base32-controller.h"
+#include "include/base85-controller.h"
 
 using namespace std;
 
@@ -59,6 +60,7 @@ int main() {
     setup_route_hex(app);
     setup_route_rot13(app);
     setup_route_base32(app);
+    setup_route_base84(app);
     
     cout << "Server started on port " << port << endl;
     app.port(port).multithreaded().run();
