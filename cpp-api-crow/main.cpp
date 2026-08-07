@@ -10,8 +10,6 @@
 #include "include/base32-controller.h"
 #include "include/base85-controller.h"
 
-using namespace std;
-
 class FileLogger : public crow::ILogHandler {
 public:
     FileLogger(const std::string& filepath) {
@@ -62,7 +60,7 @@ int main() {
     setup_route_base32(app);
     setup_route_base85(app);
     
-    cout << "Server started on port " << port << endl;
+    std::cout << "Server started on port " << port << std::endl;
     app.port(port).multithreaded().run();
 
     return 0;
