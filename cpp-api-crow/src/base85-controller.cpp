@@ -65,7 +65,7 @@ string base85_decode(const string& in) {
     return out;
 }
 
-void setup_route_base84(crow::SimpleApp& app) {
+void setup_route_base85(crow::SimpleApp& app) {
     CROW_ROUTE(app, "/api/cpp/encode/to-base85/<string>")
     ([](string plainText){
         crow::json::wvalue response;

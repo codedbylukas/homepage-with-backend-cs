@@ -60,7 +60,7 @@ int main() {
     setup_route_hex(app);
     setup_route_rot13(app);
     setup_route_base32(app);
-    setup_route_base84(app);
+    setup_route_base85(app);
     
     cout << "Server started on port " << port << endl;
     app.port(port).multithreaded().run();
