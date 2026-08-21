@@ -7,7 +7,7 @@
 #include <map>
 #include <cctype>
 #include "crow.h"
-#include "base32-controller.h"
+#include "base32-controller.hpp"
 
 const std::string B32_CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ234567";
 std::string base32_encode(const std::string& in) {

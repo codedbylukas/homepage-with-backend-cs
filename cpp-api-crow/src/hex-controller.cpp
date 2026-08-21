@@ -6,7 +6,7 @@
 #include <cstdint>
 #include <cstring>
 #include "crow.h"
-#include "hex-controller.h"
+#include "hex-controller.hpp"
 
 std::string hex_encode(const std::string& in) {
     std::stringstream ss;

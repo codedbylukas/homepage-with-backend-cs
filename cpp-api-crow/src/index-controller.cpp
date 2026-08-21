@@ -1,5 +1,5 @@
 #include "crow.h"
-#include "include/index-controller.h"
+#include "index-controller.hpp"
 #include <iostream>
 
 void setup_route_index(crow::SimpleApp& app) {

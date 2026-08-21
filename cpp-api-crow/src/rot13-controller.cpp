@@ -6,7 +6,7 @@
 #include <sstream>
 #include <cstdint>
 #include <cstring>
-#include "rot13-controller.h"
+#include "rot13-controller.hpp"
 
 std::string rot13(const std::string& in) {
     std::string out = in;
