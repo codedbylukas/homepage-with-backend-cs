@@ -11,8 +11,7 @@
 
 const std::string B32_CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ234567";
 std::string base32_encode(const std::string& in) {
-    using namespace std;
-    string out;
+    std::string out;
     int val = 0, valb = 0;
     for (unsigned char c : in) {
         val = (val << 8) | c;
@@ -32,13 +31,12 @@ std::string base32_encode(const std::string& in) {
 }
 
 std::string base32_decode(const std::string& in) {
-    using namespace std;
-    string out;
+    std::string out;
     int val = 0, valb = 0;
     for (unsigned char c : in) {
         if (c == '=') break;
         size_t idx = B32_CHARS.find(toupper(c));
-        if (idx == string::npos) continue;
+        if (idx == std::string::npos) continue;
         
         val = (val << 5) | idx;
         valb += 5;
